@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    max-width: 100%; /* Ensures that the image scales properly */
+  }
+  
