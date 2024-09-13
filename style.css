@@ -26,6 +26,10 @@ a {
   letter-spacing: 0.1rem;
 }
 
+.cta-button:hover {
+  background-color: #3A2828;
+}
+
 .highlight-pink {
   color: #E42D58;
 }
@@ -660,13 +664,18 @@ footer a {
   height: 24px;
 }
 
-/* Footer bottom section */
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  justify-content: space-between; /* Distribute space between the groups */
+  align-items: center;  /* Vertically center items */
+  margin: 30px 40px;
   padding-top: 20px;
   border-top: 1px solid #ddd;
+}
+
+.footer-links {
+  display: flex;       /* Display the links in a row */
+  gap: 20px;           /* Space between the two links */
 }
 
 .footer-bottom a {
@@ -676,4 +685,74 @@ footer a {
 
 .footer-bottom p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Entire footer styling for mobile */
+  footer {
+    padding: 30px 20px;            /* Reduce padding on mobile */
+  }
+
+  /* Make the entire footer stack vertically */
+  footer .container {
+    grid-template-columns: 1fr;    /* Change to one column layout */
+    gap: 20px;                     /* Add some spacing between items */
+    padding: 0;                    /* Remove extra padding */
+  }
+
+  /* Stack the individual sections */
+  footer .col-2, footer .col-3 {
+    grid-column: span 12;          /* Make all sections full width */
+    text-align: center;            /* Center-align content */
+  }
+
+  /* Ensure the logo is centered */
+  footer .col-2 img {
+    margin: 0 auto;                /* Center the logo */
+    width: 150px;                  /* Adjust logo size for mobile */
+  }
+
+  /* Footer links (About and Contact sections) */
+  footer ul {
+    text-align: center;            /* Center the links */
+    margin: 20px 0;                /* Add spacing around the links */
+  }
+
+  footer ul li {
+    margin-bottom: 10px;           /* Space between the list items */
+  }
+
+  /* Social media icons centered */
+  .social-icons {
+    justify-content: center;       /* Center social icons */
+  }
+
+  .social-icons img {
+    width: 32px;                   /* Slightly larger icons for touch */
+    height: 32px;
+  }
+
+  /* Footer bottom section (already handled earlier) */
+  .footer-bottom {
+    flex-direction: column;        /* Stack items vertically */
+    align-items: center;           /* Center them horizontally */
+    text-align: center;            /* Ensure text is centered */
+    margin: 20px 0;                /* Reduce margin */
+    padding-top: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;        /* Stack the links vertically */
+    gap: 10px;                     /* Space between the links */
+  }
+
+  .footer-bottom a {
+    font-size: 0.85rem;            /* Smaller font for links */
+    margin-bottom: 10px;           /* Space between links */
+  }
+
+  .footer-bottom p {
+    margin-top: 20px;              /* Space between links and copyright */
+    font-size: 0.85rem;
+  }
 }
