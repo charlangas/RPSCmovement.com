@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button Styles */
+.cta-button {
+    padding: 12px 25px;
+    background-color: #120000;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid #E42D58;
+    color: #E42D58;
+}
+
+/* Header Styles */
+header {
+    background-color: #F6F3ED;
+    padding: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(0deg, rgba(255,212,222,1) 0%, rgba(246,243,237,1) 90%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 80px;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+    line-height: 5.25rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Full-Bleed Section Styling */
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+/* Services Section */
+.services {
+    padding: 100px 80px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.tab {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #E42D58;
+    color: white;
+}
+
+.tab-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tab-content img {
+    width: 100%;
+}
+
+/* RSPC Method Section */
+.text-section {
+    padding: 80px;
+}
+
+.bg-teal {
+    background-color: #5EBEAA;
+}
+
+.bg-stone {
+    background-color: #B1AA9F;
+}
+
+.bg-pink {
+    background-color: #E42D58;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 80px;
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .tab-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .text-section {
+        padding: 40px;
+    }
+
+    .bg-image {
+        height: 300px;
+    }
+}
