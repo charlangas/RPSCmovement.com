@@ -253,6 +253,9 @@ nav {
 
 /* Responsive Design for Hero Section */
 @media (max-width: 768px) {
+  .container {
+    margin: 0 40px;
+  }
   .hero {
       grid-template-columns: 1fr; /* Stacks content on mobile */
       text-align: left;
@@ -264,12 +267,12 @@ nav {
   }
 
   .hero h1 {
-      font-size: 5rem; /* Slightly smaller heading on mobile */
-      line-height: 5rem;
+      font-size: 3rem; /* Slightly smaller heading on mobile */
+      line-height: 3rem;
   }
 
   .hero .subheader {
-      font-size: 1.5rem;
+      font-size: 1rem;
   }
 
   .cta-button {
@@ -452,11 +455,19 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .tab h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
   .tabs {
       flex-direction: column;  /* Stack tabs vertically on smaller screens */
   }
   .tab-content {
       grid-template-columns: 1fr;  /* Stack the content on smaller screens */
+  }
+  .tab-content-quote {
+    font-size: 3rem;
+    line-height: 3.25rem;
   }
   .tab-content .col-6 {
       grid-column: span 12;  /* Make each column take the full width */
@@ -706,6 +717,12 @@ nav {
 .cta {
   background: linear-gradient(0deg, rgba(255,212,222,1) 0%, rgba(246,243,237,1) 90%);
   padding: 80px;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 20px;
+  }
 }
 
 /* Footer styling */
