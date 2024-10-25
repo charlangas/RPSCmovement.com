@@ -95,11 +95,16 @@
 
     /* Service Tabs */
     .service-tabs {
-        margin-top: -80px;
+        margin-top: -70px;
     }
 
     .tabs {
         grid-template-columns: 1fr;
+    }
+
+    .tab-button {
+        font-size: .9rem;
+        padding: 1.5rem;
     }
 
     /* Services Section */
@@ -117,6 +122,10 @@
         min-height: 33vh;
     }
 
+    .quote {
+        width: 80%;
+    }
+
     p.quote {
         font-size: 3rem;
     }
@@ -125,6 +134,10 @@
     .method-grid {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .method-content {
+        padding: 30px;
     }
 
     /* Mission and Vision Section */
