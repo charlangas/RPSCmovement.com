@@ -1,0 +1,128 @@
+/* touch-interactions.css */
+
+/* Touch-specific styles */
+.touch-device {
+    /* Prevent elastic scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+
+/* Larger touch targets for touch devices */
+.touch-device .nav-links a,
+.touch-device .cta-button,
+.touch-device .tab-button {
+    min-height: 44px;
+    padding: 12px 20px;
+}
+
+/* Ripple effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 1s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Touch feedback states */
+.touch-active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Gallery touch scrolling */
+.gallery-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.gallery-container > * {
+    scroll-snap-align: start;
+}
+
+/* Accordion touch styles */
+.accordion-header {
+    position: relative;
+    padding: 15px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.accordion-header::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion-header::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+/* Touch-specific animations */
+@media (hover: none) {
+    /* Disable hover effects on touch devices */
+    .value-card:hover,
+    .partner-logo:hover {
+        transform: none;
+    }
+
+    /* Add touch feedback instead */
+    .value-card:active,
+    .partner-logo:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Improved touch targets for footer links */
+.touch-device .footer-col ul li a {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+/* Enhanced touch feedback for service tabs */
+.touch-device .tab-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.touch-device .tab-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.touch-device .tab-button.active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(20);
+    z-index: -1;
+}

@@ -1,261 +1,305 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empowering Black women and women of color through leadership coaching, advocacy, and DEI-driven communications to create lasting social impact.">
     <title>Leadership, Advocacy, and DEI Communications for Lasting Change | RPSC</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/touch-interactions.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-    <meta charSet="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Empowering Black women and women of color through leadership coaching, advocacy, and DEI-driven communications to create lasting social impact.">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"><a href="index.html"><img src="img/logo-horizontal.svg"></a></div>
-            <div id="mobile-menu" class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-horizontal.svg" alt="RPSC Logo"></a>
             </div>
-            <ul class="nav-list">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#leadership">About Us</a></li>
-                <li><a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button secondary-button">Schedule a Consultation</a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="about.html">About</a>
+                <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button secondary">Schedule a Consultation</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="col-6 hero-text">
-                <h1>Elevating Voices, Building <span class="highlight-pink">Movements</span></h1>
-                <p class="subheader">We empower Black and multicultural women to transform the world — one conversation, one community, one leader at a time.</p>
+            <div class="hero-content">
+                <h1>Elevating Voices, Building <span class="pink-text">Movements</span></h1>
+                <p class="tagline">We empower Black and multicultural women to transform the world — one conversation, one community, one leader at a time.</p>
                 <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
             </div>
-            <div class="col-6 hero-image">
-                <img src="img/hero-illustration.png" alt="Three powerful women looking to the future">
-            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/hero-illustration.png" alt="Hero Image">
         </div>
     </section>
-    
-    <!-- TRUSTED BY SECTION -->
-     <!-- 
-    <section class="trusted-by">
+
+    <!-- Service Tabs -->
+    <section class="service-tabs" id="services">
         <div class="container">
-            <p class="col-12 trusted-by-text">TRUSTED BY</p>
-            <div class="col-4">
-                <img src="img/logo1.png" alt="Company 1 Logo">
-            </div>
-            <div class="col-4">
-                <img src="img/logo2.png" alt="Company 2 Logo">
-            </div>
-            <div class="col-4">
-                <img src="img/logo3.png" alt="Company 3 Logo">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="service1" id="tab-1">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.5" y="1.5" width="27" height="27" stroke-width="3"/>
+                    </svg>                        
+                    Communications Consulting ➔
+                </button>
+                <button class="tab-button" data-tab="service2" id="tab-2">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15" cy="15" r="13.5" stroke-width="3"/>
+                    </svg>                        
+                    Community Building & Advocacy ➔
+                </button>
+                <button class="tab-button" data-tab="service3" id="tab-3">
+                    <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.57409 28.5L17 3.04252L31.4259 28.5H2.57409Z" stroke-width="3"/>
+                    </svg>                        
+                    Leadership & Executive Coaching ➔
+                </button>
             </div>
         </div>
     </section>
-     -->
-    
-    <!-- SERVICES SECTION -->
-    <section class="services" id="services">
-        <div class="container">            
-            <div class="tabs col-12">
-                <div class="tab" data-tab="tab-1">
-                    <img src="img/icon-white-communications.svg" class="tab-icon active-icon">
-                    <img src="img/icon-color-communications.svg" class="tab-icon inactive-icon">
-                    <h2>Communications Consulting ➔</h2>
-                </div>
-                <div class="tab" data-tab="tab-2">
-                    <img src="img/icon-white-community.svg" class="tab-icon active-icon">
-                    <img src="img/icon-color-community.svg" class="tab-icon inactive-icon">
-                    <h2>Community Building & Advocacy ➔</h2>
-                </div>
-                <div class="tab" data-tab="tab-3">
-                    <img src="img/icon-white-coaching.svg" class="tab-icon active-icon">
-                    <img src="img/icon-color-coaching.svg" class="tab-icon inactive-icon">
-                    <h2>Leadership & Executive Coaching ➔</h2>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Wrap tab-content in a new container -->
-        <div class="tab-contents-container">
-            <div class="tab-content" id="tab-1">
-                <div class="col-12">
-                    <p class="tab-content-quote">The right story at the right time can change <span class="highlight-pink">everything</span>.</p>
-                    <div class="spacer-40"></div>
-                </div>
-                <div class="col-6">
-                    <p class="subheader bold highlight-pink">We transform the way companies connect with the world by crafting authentic social impact stories that inspire change.</p>
-                    <p>Through powerful DE&I messaging and immersive cultural campaigns, we help you ignite conversations that matter and drive lasting engagement. Your brand's story has the power to reshape narratives — let's make it unforgettable.</p>
-                    <ul>
-                        <li><strong>Strategic DEI/CSR Communications:</strong> Develop a communications strategy that reflects your commitment to diversity and equity.</li>
-                        <li><strong>Cultural Engagement Campaigns:</strong> Bring your values to life through vibrant campaigns, events, and experiences that connect and engage diverse communities.</li>
-                        <li><strong>Inclusive Leadership & Allyship Workshops:</strong> Empower your team to become champions of inclusion.</li>
-                    </ul>
-                    <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
-                </div>
-                <div class="col-6">
-                    <img src="img/communications.jpg" alt="Communications Consulting illustration">
-                </div>
-            </div>
-    
-            <div class="tab-content" id="tab-2" style="display:none;">
-                <div class="col-12">
-                    <p class="tab-content-quote">When we stand together, we become <span class="highlight-stone">unstoppable</span>.</p>
-                    <div class="spacer-40"></div>
-                </div>
-                <div class="col-6">
-                    <p class="subheader bold highlight-stone">We’re on a mission to build a powerful collective of Black and multicultural women, amplifying their voices to create lasting systemic change.</p>
-                    <p>By building powerful communities, driving advocacy, and amplifying voices, we empower changemakers and non-profit organizations to create a future rooted in equity and justice. Together, we are unstoppable — united by our mission to uplift, mobilize, and lead with purpose.</p>
-                    <ul>
-                        <li><strong>Black Femme Fuel Network:</strong> A dynamic community of Black femme leaders.</li>
-                        <li><strong>Mastermind Working Groups:</strong> Collaborative efforts to drive policy reform and leadership growth.</li>
-                        <li><strong>Digital Advocacy & Storytelling:</strong> Mobilize voices, share empowering stories, and inspire global change.</li>
-                    </ul>
-                    <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
-                </div>
-                <div class="col-6">
-                    <img src="img/community-building.jpg" alt="Community Building & Advocacy illustration">
-                </div>
-            </div>
-    
-            <div class="tab-content" id="tab-3" style="display:none;">
-                <div class="col-12">
-                    <p class="tab-content-quote">Growth isn't about changing who you are—it's about becoming <span class="highlight-teal">more of who you're meant to be</span>.</p>
-                    <div class="spacer-40"></div>
-                </div>
-                <div class="col-6">
-                    <p class="subheader bold highlight-teal">We believe in the boundless potential of Black and multicultural women to lead with passion, resilience, and grace.</p>
-                    <p>Our coaching is designed to help you unlock your greatness, elevate your leadership, and create the life you've always envisioned. With every step, you’ll discover new strengths, new purpose, and the power to turn your dreams into reality.</p>
-                    <ul>
-                        <li><strong>Executive & Leadership Coaching:</strong> Step into your power, embrace your potential, and lead with confidence.</li>
-                        <li><strong>Empowerment & Alignment Coaching:</strong> Align your goals with your passions, and transform your vision into reality.</li>
-                        <li><strong>Group Coaching & Workshops:</strong> Experience collective growth in inspiring workshops.</li>
-                    </ul>
-                    <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
-                </div>
-                <div class="col-6">
-                    <img src="img/leadership.jpg" alt="Leadership Coaching illustration">
-                </div>
-            </div>
-        </div> <!-- End of tab-contents-container -->
-    </section>
 
-    <div class="spacer-120"></div>
-
-    <!-- FULL-WIDTH IMAGE -->
-    <section class="quote">
+    <!-- Services Section -->
+    <section class="services">
         <div class="container">
-            <div class="col-6">
-                <p>When we lead with purpose, we create space for others to thrive.</p>
+            <div class="service-content" id="service1">
+                <h2 class="uppercase">The right story at the right time can change <span class="pink-text">everything</span>.</h2>
+                <div class="service-grid">
+                    <div class="service-text">
+                        <p class="pink-text bold bigger-text">We transform the way companies connect with the world by crafting authentic social impact stories that inspire change.</p>
+                        <p>Through powerful DE&I messaging and immersive cultural campaigns, we help you ignite conversations that matter and drive lasting engagement. Your brand's story has the power to reshape narratives — let's make it unforgettable.</p>
+                        <ul>
+                            <li><span class="bold">Strategic DEI/CSR Communications:</span> Develop a communications strategy that reflects your commitment to diversity and equity.</li>
+                            <li><span class="bold">Cultural Engagement Campaigns:</span> Bring your values to life through vibrant campaigns, events, and experiences that connect and engage diverse communities.</li>
+                            <li><span class="bold">Inclusive Leadership & Allyship Workshops:</span> Empower your team to become champions of inclusion.</li>
+                        </ul>
+                        <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/communications.jpg" alt="Strategic Communications">
+                    </div>
+                </div>
+            </div>
+            <div class="service-content" id="service2">
+                <h2 class="uppercase">When we stand together, we become <span class="stone-text">unstoppable</span>.</h2>
+                <div class="service-grid">
+                    <div class="service-text">
+                        <p class="stone-text bold bigger-text">We're on a mission to build a powerful collective of Black and multicultural women, amplifying their voices to create lasting systemic change.</p>
+                        <p>By building powerful communities, driving advocacy, and amplifying voices, we empower changemakers and non-profit organizations to create a future rooted in equity and justice. Together, we are unstoppable — united by our mission to uplift, mobilize, and lead with purpose.</p>
+                        <ul>
+                            <li><span class="bold">Black Femme Fuel Network:</span> A dynamic community of Black femme leaders.</li>
+                            <li><span class="bold">Mastermind Working Groups:</span> Collaborative efforts to drive policy reform and leadership growth.</li>
+                            <li><span class="bold">Digital Advocacy & Storytelling:</span> Mobilize voices, share empowering stories, and inspire global change.</li>
+                        </ul>
+                        <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/community-building.jpg" alt="Strategic Communications">
+                    </div>
+                </div>
+            </div>
+            <div class="service-content" id="service3">
+                <h2 class="uppercase">Growth isn't about changing who you are—it's about becoming <span class="teal-text">more of who you're meant to be</span>.</h2>
+                <div class="service-grid">
+                    <div class="service-text">
+                        <p class="teal-text bold bigger-text">We believe in the boundless potential of Black and multicultural women to lead with passion, resilience, and grace.</p>
+                        <p>Our coaching is designed to help you unlock your greatness, elevate your leadership, and create the life you've always envisioned. With every step, you'll discover new strengths, new purpose, and the power to turn your dreams into reality.</p>
+                        <ul>
+                            <li><span class="bold">Executive & Leadership Coaching:</span> Step into your power, embrace your potential, and lead with confidence.</li>
+                            <li><span class="bold">Empowerment & Alignment Coaching:</span> Align your goals with your passions, and transform your vision into reality.</li>
+                            <li><span class="bold">Group Coaching & Workshops:</span> Experience collective growth in inspiring workshops.</li>
+                        </ul>
+                        <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Schedule a Consultation</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/leadership.jpg" alt="Strategic Communications">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-
-    <div class="spacer-120"></div>
-
-    <!-- LEADERSHIP SECTION -->
-    <section class="leadership" id="leadership">
-        <div class="container text-center">
-            <h2 class="col-12">The Faces of Change</h2>
-            <p class="col-12 subheader">Three sisters, one shared mission — creating lasting impact through bold leadership and advocacy.</p>
-            <div class="col-4">
-                <img src="img/myisha.jpg" alt="Myisha Boyd portrait">
-                <p class="subheader bold">Myisha Boyd</p>
-                <p class="bold">Co-Founder & Managing Partner</p>
-                <p>Strategy & Development</p>
-            </div>
-            <div class="col-4">
-                <img src="img/nicole.jpg" alt="Nicole Smith portrait">
-                <p class="subheader bold">Nicole Smith</p>
-                <p class="bold">Co-Founder & Partner</p>
-                <p >Programs & Advocacy</p>
-            </div>
-            <div class="col-4">
-                <img src="img/cozetta.jpg" alt="Cozetta Smith portrait">
-                <p class="subheader bold">Cozetta Smith</p>
-                <p class="bold">Co-Founder & Partner</p>
-                <p>Strategy & Development</p>
+    <!-- Quote Section -->
+    <section class="quote-section" style="background-image: url('img/bg-image.jpg');">
+        <div class="overlay">
+            <div class="container">
+                <p class="quote uppercase">When we lead with purpose, we create space for others to thrive.</p>
             </div>
         </div>
     </section>
 
-    <div class="spacer-120"></div>
-            
-    <!-- CTA SECTION -->
-    <section class="cta">
-        <div class="container text-center">
-            <div class="col-12">
-                <h2>Ready to Unlock Lasting Change?</h2>
-                <p class="subheader">Let's connect and explore how we can help you lead with purpose. Schedule your free consultation now.</p>
-                <div class="spacer-40"></div>
-                <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Book Your Free Consultation Now</a>
+    <!-- RPSC Method Section -->
+    <section class="grid" id="rpsc-method">
+        <div class="method-image">
+            <img src="img/rpsc-method.svg" alt="RPSC Method">
+        </div>
+        <div class="method-content">
+                <h2>The RPSC Method</h2>
+                <p class="bigger-text">The RPSC Method drives change from three angles — personal empowerment, systemic advocacy, and authentic communication. Together, we unlock radical transformation.</p>
+                <p>With this method, we drive transformation at every level through advocacy, relationship-building, and leadership coaching. This holistic approach inspires both personal empowerment and organizational impact.</p>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="grid">
+        <div class="mission" style="background-image: url('img/mission.jpg')">
+            <div class="overlay">
+                <h2>Our Mission</h2>
+                <p>We believe in a future where Black and multicultural women lead with confidence, communities thrive, and organizations create real, lasting social impact. Our mission is to unlock that future, one leader, one voice, one community at a time.</p>
+            </div>
+        </div>
+        <div class="vision" style="background-image: url('img/vision.jpg')">
+            <div class="overlay">
+                <h2>Our Vision</h2>
+                <p>Our vision is a world where every Black and multicultural woman stands in her power, drives systemic change, and shapes a future of justice and equity. We exist to make that vision a reality through leadership, advocacy, and transformative communication.</p>
             </div>
         </div>
     </section>
-    
+
+    <!-- Leadership Section -->
+    <section class="leadership">
+        <div class="container">
+            <h2>The Faces of Change</h2>
+            <p class="section-intro bigger-text">Three sisters, one shared mission — creating lasting impact through bold leadership and advocacy.</p>
+            <div class="leadership-grid">
+                <div class="leader">
+                    <img src="img/myisha.jpg" alt="Leader 1">
+                    <p><span class="bold bigger-text">Myisha Boyd</span><br><span class="bold">Co-Founder & Managing Partner</span><br>Head of Strategy & Development</p>
+                </div>
+                <div class="leader">
+                    <img src="img/nicole.jpg" alt="Leader 2">
+                    <p><span class="bold bigger-text">Nicole Smith</span><br><span class="bold">Co-Founder & Partner</span><br>Head of Programs & Advocacy</p>
+                </div>
+                <div class="leader">
+                    <img src="img/cozetta.jpg" alt="Leader 3">
+                    <p><span class="bold bigger-text">Cozetta Smith</span><br><span class="bold">Co-Founder & Partner</span><br>Head of Creative & Storytelling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Unlock Lasting Change?</h2>
+            <p class="bigger-text">Let’s connect and explore how we can help you lead with purpose. Schedule your free consultation now.</p>
+            <a href="https://calendly.com/rpscmovement-myisha" target="_blank" class="cta-button">Book Your Free Consultation Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <!-- Logo section -->
-            <div class="col-2">
-                <img src="img/logo-footer.svg" alt="Footer logo">
-            </div>
-
-            <div class="col-3"></div>
-    
-            <!-- About section with links -->
-            <div class="col-2">
-                <ul>
-                    <li><strong>About</strong></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#rpsc-method">The RSPC Method</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-    
-            <!-- Contact section with email, phone, and location -->
-            <div class="col-3">
-                <ul>
-                    <li><strong>Contact</strong></li>
-                    <li><a href="mailto:hello@rpscmovement.com">hello@rpscmovement.com</a></li>
-                    <li><a href="tel:913-276-0308">(913) 276-0308</a></li>
-                    <li>Kansas City, KS</li>
-                </ul>
-            </div>
-    
-            <!-- Follow Us section with social media icons -->
-            <div class="col-2">
-                <strong>Follow Us</strong>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/rockpaperscissorsconsulting/" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/rockpaperscissorsconsulting/?hl=en" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/company/rockpaperscissorsconsulting" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn"></a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="tel:913-276-0308">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.5C2 2.67157 2.67157 2 3.5 2H4.64837C5.35142 2 5.96014 2.4883 6.11265 3.1746L6.82887 6.39757C7.00105 7.17238 6.53984 7.9472 5.77667 8.16525L4.84388 8.43176C4.4331 8.54913 4.20107 8.98665 4.36396 9.38159C5.53001 12.2087 7.79126 14.47 10.6184 15.636C11.0134 15.7989 11.4509 15.5669 11.5682 15.1561L11.8348 14.2233C12.0528 13.4602 12.8276 12.999 13.6024 13.1711L16.8254 13.8873C17.5117 14.0399 18 14.6486 18 15.3516V16.5C18 17.3284 17.3284 18 16.5 18H15C13.8514 18 12.7366 17.8509 11.6742 17.5705C7.16665 16.3809 3.61908 12.8334 2.42949 8.32576C2.14913 7.26341 2 6.14856 2 5V3.5Z"/>
+                            </svg>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <p>(913) 276-0308</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:hello@rpscmovement.com">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="email">
+                                <path d="M3.66663 4C2.56206 4 1.66663 4.89543 1.66663 6V7.16147L10.1076 11.382C10.4595 11.5579 10.8737 11.5579 11.2256 11.382L19.6666 7.16147V6C19.6666 4.89543 18.7712 4 17.6666 4H3.66663Z"/>
+                                <path d="M19.6666 8.83853L11.8965 12.7236C11.1223 13.1107 10.211 13.1107 9.43679 12.7236L1.66663 8.83853V14C1.66663 15.1046 2.56206 16 3.66663 16H17.6666C18.7712 16 19.6666 15.1046 19.6666 14V8.83853Z"/>
+                            </svg>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <p>hello@rpscmovement.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="#">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0235 18.933L10.0263 18.9342C10.2234 19.02 10.3334 19 10.3334 19C10.3334 19 10.4434 19.02 10.6413 18.9339L10.6433 18.933L10.649 18.9304L10.6672 18.922C10.6822 18.915 10.703 18.9052 10.7293 18.8926C10.7817 18.8673 10.8559 18.8306 10.9487 18.7822C11.1342 18.6855 11.3946 18.5419 11.705 18.3495C12.3246 17.9655 13.1507 17.3826 13.9789 16.5844C15.6355 14.9876 17.3334 12.4925 17.3334 9C17.3334 5.13401 14.1994 2 10.3334 2C6.46738 2 3.33337 5.13401 3.33337 9C3.33337 12.4925 5.03121 14.9876 6.68789 16.5844C7.51601 17.3826 8.34214 17.9655 8.96172 18.3495C9.27216 18.5419 9.5326 18.6855 9.71805 18.7822C9.81082 18.8306 9.885 18.8673 9.93747 18.8926C9.96371 18.9052 9.98454 18.915 9.99957 18.922L10.0177 18.9304L10.0235 18.933ZM10.3334 11.25C11.576 11.25 12.5834 10.2426 12.5834 9C12.5834 7.75736 11.576 6.75 10.3334 6.75C9.09073 6.75 8.08337 7.75736 8.08337 9C8.08337 10.2426 9.09073 11.25 10.3334 11.25Z"/>
+                            </svg>
+                            <div class="contact-details">
+                                <span class="contact-label">Address</span>
+                                <p>Kansas City, KS</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <!-- Bottom section for terms, privacy policy, and copyright -->
-        <div class="footer-bottom">
-            <div class="footer-links">
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col logo">
+                        <img src="img/logo-footer.svg" alt="Footer logo">
+                        <p>Empowering diverse voices and building inclusive leadership for a better tomorrow.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>RPSC</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#rpsc-method">The RPSC Method</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="https://calendly.com/rpscmovement-myisha" target="_blank">Book a Consultation</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col social">
+                        <h3>Connect</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/rockpaperscissorsconsulting/" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/rockpaperscissorsconsulting/?hl=en" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/company/rockpaperscissorsconsulting" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>© 2024 Rock Paper Scissors Consulting. All rights reserved.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="legal-links">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2024 Rock Paper Scissors Consulting. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="tabs.js"></script>
-    <script src="nav.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/touch-interactions.js"></script>
 </body>
 </html>

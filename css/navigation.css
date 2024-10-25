@@ -1,0 +1,36 @@
+.main-nav {
+    background-color: #F6F3ED;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    color: #E42D58;
+    font-weight: 500;
+}
+
+.nav-links .cta-button {
+    margin-top: 0px;
+}
